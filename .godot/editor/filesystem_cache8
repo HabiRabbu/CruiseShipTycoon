@@ -1,0 +1,24 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1714585348
+icon.svg::CompressedTexture2D::1564021358547106310::1714488852::1714488861::1::::<><>::
+::res://assets/::1714577295
+::res://assets/materials/::1714579620
+water_shader_material.gdshader::Shader::-1::1714579620::0::1::::<><>::
+::res://assets/models/::1714577295
+::res://assets/models/Cruisership 2012/::1714577297
+Cruiser 2012.obj::Mesh::6070045139359349236::1714577288::1714577297::1::::<><>::
+::res://assets/models/Cruisership 2012/Maps/::1714577296
+ang1.jpg::CompressedTexture2D::5442357719260933975::1714577288::1714577296::1::::<><>::
+angar_bo4ka_09_01_01_02.jpg::CompressedTexture2D::5671534264237442761::1714577288::1714577296::1::::<><>::
+cs1.jpg::CompressedTexture2D::6357686729973439983::1714577288::1714577296::1::::<><>::
+cs2b.jpg::CompressedTexture2D::6272119845878380664::1714577288::1714577296::1::::<><>::
+dk1b.jpg::CompressedTexture2D::6791797807686145695::1714577288::1714577296::1::::<><>::
+dr3.jpg::CompressedTexture2D::973229179912551702::1714577288::1714577296::1::::<><>::
+::res://assets/textures/::1714492997
+4141-normal.jpg::CompressedTexture2D::6797919907880122584::1714492994::1714492997::1::::<><>::
+tex_Water.jpg::CompressedTexture2D::8138935117686134630::1714489845::1714489848::1::::<><>::
+::res://scenes/::1714579617
+game.tscn::PackedScene::6070286532046966482::1714579141::0::1::::<><>::uid://b5b6kv6dijxv0::::res://scenes/water_box.tscn<>uid://csqm0yvotaeum::::res://assets/models/Cruisership 2012/Cruiser 2012.obj
+water.tscn::PackedScene::5554458841957838540::1714574869::0::1::::<><>::res://assets/materials/water_shader_material.gdshader<>uid://c3370olm0ur2o::::res://assets/textures/4141-normal.jpg
+water_box.tscn::PackedScene::4496051606329609639::1714579617::0::1::::<><>::res://assets/materials/water_shader_material.gdshader<>uid://c3370olm0ur2o::::res://assets/textures/4141-normal.jpg
+::res://scripts/::1714488873

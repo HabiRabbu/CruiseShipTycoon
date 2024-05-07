@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5b6kv6dijxv0"]
+
+[ext_resource type="Shader" path="res://assets/materials/water_shader_material.gdshader" id="1_csnwr"]
+[ext_resource type="Texture2D" uid="uid://c3370olm0ur2o" path="res://assets/textures/4141-normal.jpg" id="2_uwvwm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iybe6"]
+render_priority = 0
+shader = ExtResource("1_csnwr")
+shader_parameter/direction1 = Vector2(1, 0.2)
+shader_parameter/direction2 = Vector2(0.7, 0.7)
+shader_parameter/direction3 = Vector2(-0.4, 1)
+shader_parameter/direction5 = Vector2(-0.8, 1)
+shader_parameter/direction6 = Vector2(-0.1, 5)
+shader_parameter/speed1 = 1.0
+shader_parameter/speed2 = 0.7
+shader_parameter/speed3 = 1.2
+shader_parameter/steepness1 = 0.8
+shader_parameter/steepness2 = 0.6
+shader_parameter/steepness3 = 0.7
+shader_parameter/amplitude1 = 0.5
+shader_parameter/amplitude2 = 0.3
+shader_parameter/amplitude3 = 0.4
+shader_parameter/wavelength1 = 10.0
+shader_parameter/wavelength2 = 15.0
+shader_parameter/wavelength3 = 8.0
+shader_parameter/albedo = Color(0, 0.321569, 0.431373, 1)
+shader_parameter/roughness = 0.02
+shader_parameter/metallic = 0.0
+shader_parameter/edge_color = Color(1, 1, 1, 1)
+shader_parameter/edge_scale = 0.1
+shader_parameter/beers_law = 2.0
+shader_parameter/texture_normal = ExtResource("2_uwvwm")
+
+[sub_resource type="BoxMesh" id="BoxMesh_js2cr"]
+material = SubResource("ShaderMaterial_iybe6")
+size = Vector3(2000, 1, 2000)
+subdivide_width = 1000
+subdivide_height = 1000
+subdivide_depth = 1000
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+transform = Transform3D(1.52019, 0, 0, 0, 1.02255, 0, 0, 0, 2.85601, 0, 0, 0)
+mesh = SubResource("BoxMesh_js2cr")
