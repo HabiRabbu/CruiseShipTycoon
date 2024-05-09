@@ -1,1 +1,4 @@
+res://scenes/game.tscn
 res://assets/materials/water_shader_material.gdshader
+res://scenes/water_box.tscn
+res://scenes/water.tscn

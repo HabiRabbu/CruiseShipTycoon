@@ -1,7 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://csqqy5sowtp0m"]
+[gd_scene load_steps=6 format=3 uid="uid://csqqy5sowtp0m"]
 
 [ext_resource type="PackedScene" uid="uid://b5b6kv6dijxv0" path="res://scenes/water_box.tscn" id="1_51xb4"]
 [ext_resource type="ArrayMesh" uid="uid://csqm0yvotaeum" path="res://assets/models/Cruisership 2012/Cruiser 2012.obj" id="2_itdlq"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_51kwd"]
+sky_top_color = Color(0.392157, 0.737255, 0.905882, 1)
+sky_horizon_color = Color(0.648039, 0.726564, 0.759721, 1)
+sky_energy_multiplier = 4.4
+ground_horizon_color = Color(0.648039, 0.726564, 0.759721, 1)
+
+[sub_resource type="Sky" id="Sky_h78xf"]
+sky_material = SubResource("ProceduralSkyMaterial_51kwd")
+
+[sub_resource type="Environment" id="Environment_qbdvy"]
+background_mode = 2
+sky = SubResource("Sky_h78xf")
+tonemap_mode = 2
+glow_enabled = true
 
 [node name="Game" type="Node3D"]
 
@@ -10,3 +25,6 @@
 [node name="Cruiser2012" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.116439, 0, 2.9017, 0, 1.33923, 0, -1.65395, 0, 0.204281, 665.11, -22.9171, 68.2644)
 mesh = ExtResource("2_itdlq")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_qbdvy")
